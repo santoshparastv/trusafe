@@ -1,0 +1,112 @@
+@import "tailwindcss";
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap");
+
+/* TruSafe Brand Colors */
+:root {
+  --trusafe-maroon: #800000;
+  --trusafe-black: #000000;
+  --trusafe-yellow: #ffd700;
+  --trusafe-white: #ffffff;
+  --text-primary: #111111;
+  --text-secondary: #666666;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  line-height: 1.6;
+  background-color: var(--trusafe-white);
+  color: var(--text-primary);
+}
+
+/* TruSafe Component Classes */
+.btn-primary {
+  @apply px-6 py-3 rounded-lg font-semibold transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1;
+  background-color: var(--trusafe-maroon);
+  color: var(--trusafe-white);
+}
+
+.btn-primary:hover {
+  background-color: #660000;
+}
+
+.btn-secondary {
+  @apply px-6 py-3 rounded-lg font-semibold border-2 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1;
+  background-color: var(--trusafe-white);
+  color: var(--trusafe-maroon);
+  border-color: var(--trusafe-maroon);
+}
+
+.btn-secondary:hover {
+  background-color: var(--trusafe-maroon);
+  color: var(--trusafe-white);
+}
+
+.btn-accent {
+  @apply px-6 py-3 rounded-lg font-semibold transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1;
+  background-color: var(--trusafe-yellow);
+  color: var(--trusafe-black);
+}
+
+.btn-accent:hover {
+  background-color: #e6c200;
+}
+
+.container-custom {
+  @apply max-w-7xl mx-auto px-4;
+}
+
+@media (min-width: 640px) {
+  .container-custom {
+    @apply px-6;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container-custom {
+    @apply px-8;
+  }
+}
+
+.section-padding {
+  @apply py-16;
+}
+
+@media (min-width: 1024px) {
+  .section-padding {
+    @apply py-24;
+  }
+}
+
+.text-shadow {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* TruSafe Specific Utility Classes */
+.text-maroon {
+  color: var(--trusafe-maroon);
+}
+
+.text-gold {
+  color: var(--trusafe-yellow);
+}
+
+.bg-maroon {
+  background-color: var(--trusafe-maroon);
+}
+
+.bg-gold {
+  background-color: var(--trusafe-yellow);
+}
+
+.border-maroon {
+  border-color: var(--trusafe-maroon);
+}
+
+.hover-maroon:hover {
+  color: var(--trusafe-maroon);
+}
