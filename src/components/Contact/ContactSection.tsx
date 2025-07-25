@@ -25,8 +25,8 @@ const ContactSection: React.FC = () => {
             Contact Us
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto text-lg">
-            Get in touch with us for all your security needs. We're here to help
-            you 24/7.
+            Get in touch with us for all your security needs. We&apos;re here to
+            help you 24/7.
           </p>
         </motion.div>
 

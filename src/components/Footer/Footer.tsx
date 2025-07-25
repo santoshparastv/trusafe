@@ -51,7 +51,7 @@ const Footer: React.FC = () => {
             </div>
 
             <p className="text-gray-600 mb-6 leading-relaxed">
-              India's most trusted security partner providing professional
+              India&apos;s most trusted security partner providing professional
               security services with trained guards, 24/7 surveillance, and
               customized protection plans.
             </p>
